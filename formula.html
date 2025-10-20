@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="topo">
+            <div class="menu">
+                <a href="entrada.html">Entrada</a> |
+                <a href="quemsou.html">Quem Sou</a> |
+                <a href="formula.html">Formulário</a> |
+                <a href="ancoras.html">Âncoras</a> |
+                <a href="relator.html">Relatório</a> |
+                <a href="javascript:history.back()">Voltar</a>
+            </div>
+            <hr>
+        </div>
+
+        <div class="conteudo">
+            
+            <div class="titulo-pagina">
+                <h1>Formulário</h1>
+                <div class="linha-vermelha"></div>
+            </div>
+
+            <h3 class="titulo-form">Cadastro de Médicos</h3>
+            
+            <form action="#" method="post">
+                <table class="tabela-form">
+                    <tr>
+                        <td class="form-label-cell"><label for="sobrenome">Sobrenome:</label></td>
+                        <td><input type="text" id="sobrenome" name="sobrenome"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label-cell"><label for="nome">Nome:</label></td>
+                        <td><input type="text" id="nome" name="nome" placeholder="Digite o nome completo do médico"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label-cell"><label for="senha">Senha:</label></td>
+                        <td><input type="password" id="senha" name="senha"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label-cell"><label>Sangue:</label></td>
+                        <td>
+                            <input type="radio" name="sangue" value="A"> A
+                            <input type="radio" name="sangue" value="B"> B
+                            <input type="radio" name="sangue" value="AB"> AB
+                            <input type="radio" name="sangue" value="O"> O
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-label-cell label-top"><label for="disciplinas">Disciplinas Habilitadas:</label></td>
+                        <td>
+                            <select id="disciplinas" name="disciplinas" multiple size="5">
+                                <option value="mat">Matemática</option>
+                                <option value="port">Português</option>
+                                <option value="geo">Geografia</option>
+                                <option value="hist">História</option>
+                                <option value="cien">Ciências</option>
+                            </select>
+                            <br><small>Segure CTRL+Clique para marcar dois ou mais itens</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-label-cell"><label for="especialidade">Especialidade:</label></td>
+                        <td>
+                            <select id="especialidade" name="especialidade">
+                                <option value="clinica" selected>Clinica Geral</option>
+                                <option value="cardio">Cardiologia</option>
+                                <option value="pediatra">Pediatria</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-label-cell"><label for="escola">Escola de Graduação:</label></td>
+                         <td>
+                            <select id="escola" name="escola">
+                                <option value="fatec" selected>FATEC</option>
+                                <option value="unesp">UNESP</option>
+                                <option value="usp">USP</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-label-cell"><label for="cidade_nasc">Cidade Nascimento:</label></td>
+                        <td>
+                             <select id="cidade_nasc" name="cidade_nasc">
+                                <option value="assis" selected>Assis</option>
+                                <option value="ourinhos">Ourinhos</option>
+                                <option value="marilia">Marília</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-label-cell"><label for="logradouro">Logradouro moradia:</label></td>
+                        <td><input type="text" id="logradouro" name="logradouro"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label-cell"><label for="complemento">Complemento:</label></td>
+                        <td><input type="text" id="complemento" name="complemento"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label-cell"><label for="telefone">Telefone:</label></td>
+                        <td><input type="text" id="telefone" name="telefone" placeholder="escreva somente números"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label-cell"><label for="bairro">Bairro:</label></td>
+                        <td><input type="text" id="bairro" name="bairro"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label-cell"><label for="cep">CEP:</label></td>
+                        <td><input type="text" id="cep" name="cep"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="form-label-cell"><label for="nascimento">Nascimento:</label></td>
+                        <td><input type="date" id="nascimento" name="nascimento"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label-cell"><label for="data_cadastro">Data de Cadastro:</label></td>
+                        <td><input type="date" id="data_cadastro" name="data_cadastro"></td>
+                    </tr>
+                     <tr>
+                        <td class="form-label-cell label-top"><label for="resenha">Resenha profissional:</label></td>
+                        <td><textarea id="resenha" name="resenha" rows="5" placeholder="Entre com a experiência profissional do médico"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label-cell"><label>Porta do Consultório:</label></td>
+                        <td>
+                            <input type="checkbox" name="porta" value="branco" checked> Branco
+                            <input type="checkbox" name="porta" value="preto"> Preto
+                            <input type="checkbox" name="porta" value="prata"> Prata
+                            <input type="checkbox" name="porta" value="amarelo"> Amarelo
+                            <input type="checkbox" name="porta" value="azul"> Azul
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-label-cell label-top"><label for="locais">Locais de Atendimento:</label></td>
+                        <td>
+                            <select id="locais" name="locais" multiple size="5">
+                                <option value="ourinhos">Ourinhos</option>
+                                <option value="sta_cruz">Sta Cruz Do Rio Pardo</option>
+                                <option value="chavantes">Chavantes</option>
+                                <option value="ipaucu">Ipauçu</option>
+                                <option value="ibirarema">Ibirarema</option>
+                            </select>
+                            <br><small>Use CTRL+Clique do mouse para escolher 2 ou + alternativas.</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-label-cell"><label for="cor_moveis">Cor padrão de móveis:</label></td>
+                        <td><input type="color" id="cor_moveis" name="cor_moveis"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label-cell"><label for="aluguel">Valor disponivel para pagar aluguel:</label></td>
+                        <td><input type="number" id="aluguel" name="aluguel" min="0" step="any"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="form-label-cell"><label>Ações:</label></td>
+                        <td>
+                            <input type="reset" value="Limpar">
+                            <input type="submit" value="Enviar">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+
+        <div class="rodape">
+            <hr>
+            <p>Formulário &copy; 2025.2, Texto: FATEC-Ourinhos - ADS VESPERTINO 4 semestre - formula.html</p>
+        </div>
+    </div>
+
+</body>
+</html>

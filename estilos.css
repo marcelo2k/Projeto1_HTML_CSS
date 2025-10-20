@@ -1,0 +1,215 @@
+body {
+    font-family: TAHOMA, Verdana, sans-serif;
+    font-size: 14px;
+    background-color: #FAF0E6;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.topo {
+    height: 45px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.topo .menu {
+    white-space: nowrap;
+}
+
+.topo .menu a {
+    font-size: 12px;
+    text-decoration: none;
+    color: blue;
+}
+
+.topo hr {
+    border: 0;
+    border-top: 1px solid black;
+}
+
+.conteudo {
+    padding: 20px;
+}
+
+.titulo-pagina {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.titulo-pagina h1 {
+    color: red;
+    font-size: 14px;
+    margin: 0;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+.conteudo h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.conteudo h3.titulo-form {
+    color: red;
+}
+
+
+.linha-vermelha {
+    height: 2px;
+    background-color: red;
+    width: 100%;
+}
+
+.rodape {
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    padding: 10px;
+}
+
+.rodape hr {
+    border: 0;
+    border-top: 1px solid black;
+    margin-top: 20px;
+}
+
+.tabela-quemsou {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela-quemsou td {
+     vertical-align: top;
+     padding-bottom: 5px;
+}
+
+.tabela-quemsou .titulo-secao {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.tabela-quemsou .item-label {
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: right;
+    padding-right: 10px;
+    white-space: nowrap;
+    width: 1%;
+}
+
+.tabela-form {
+    padding-top: 10px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.tabela-form td {
+    padding-bottom: 8px;
+    vertical-align: middle;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.tabela-form .form-label-cell {
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    font-weight: normal;
+    color: black;
+    text-align: left;
+    padding-right: 0px;
+    white-space: nowrap;
+    vertical-align: middle;
+    width: 1%;
+}
+
+.tabela-form td:not(.form-label-cell) {
+    padding-left: 3px;
+}
+
+
+.tabela-form .label-top {
+    vertical-align: top;
+    padding-top: 5px;
+}
+
+.tabela-form input[type="text"],
+.tabela-form input[type="password"],
+.tabela-form input[type="date"],
+.tabela-form input[type="number"],
+.tabela-form select,
+.tabela-form textarea {
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.tabela-form input[type="submit"],
+.tabela-form input[type="reset"] {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: blue;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.pagina-ancoras table {
+    width: 100%;
+}
+
+.pagina-ancoras .menu-ancoras {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.pagina-ancoras .titulo-secao-ancora {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.pagina-ancoras h2 {
+     text-align: center;
+     margin-bottom: 15px;
+}
+
+.pagina-ancoras p {
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.tabela-relatorio {
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    text-align: center;
+    color: black;
+}
+
+.tabela-relatorio tr:nth-child(odd) {
+    background-color: #e0ffe0;
+}
+
+.tabela-relatorio td {
+    padding: 2px;
+}
